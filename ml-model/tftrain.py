@@ -2,13 +2,16 @@ import os
 import time
 import tensorflow.compat.v1 as tf
 
+from model import model
+
 # Parameter dictionary
 params = {}
 params['hidden_layer_size'] = hidden_layer_size = 256  # estimation of next pair of points
 params['output_size'] = output_size = 100 # number of model checkpoint files to keep
 
 # restore_path = str(os.getenv('RESTORE_PATH', '/home/position_0.ckpt'))
-saver_path = str(os.getenv('SAVER_PATH', '/home/postion/'))
+# saver_path = str(os.getenv('SAVER_PATH', './models'))
+saver_path = './models'
 
 # Define the input placeholders
 input_numerical = tf.placeholder(tf.float32, shape=[None, 40], name='input_numerical')
