@@ -9,6 +9,6 @@ docker login
 # use Docker to build images
 docker image build -t adsaunde/ml-fastapi:0.1 .
 # use kaniko to build the image and send it 
-kaniko --dockerfile=Dockerfile --context=. --destination=ml-fastapi:latest
+# kaniko --dockerfile=Dockerfile --context=. --destination=ml-fastapi:latest
 
 
