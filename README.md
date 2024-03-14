@@ -6,6 +6,15 @@ Focus on your ml work and use this cookie cutter to create an API image for depl
 The [ml-model](https://github.com/degrasse-python/ml-api/tree/main/ml-model) folder contains two examples of a train-test-validation using tensorflow and scikit-learn to build a serialized model. Below are some steps that you would need to do to get this code into production. Notice that this code has completed a few of the steps for you to get you started but is really only for use in a testing environment. 
 
 
+## Setup Instructions
+
+To get started you must do these simple steps:
+
+1. Fork this repo
+2. Create a serialized model of your ML prediction algorithm.
+3. Use the Dockerfile here to containerize your API.
+4. Push your image to your container repo.
+
 ## Steps to Productionize FastAPI code
 
 The steps involved deploying your FastAPI application in a production environment, ensuring scalability, reliability, and security. Here are the key steps to productionize your FastAPI application:
