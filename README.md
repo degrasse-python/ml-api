@@ -1,6 +1,6 @@
 # Machine Learning API Service 
 
-Machine Learning Prediction Algorithm made with Tensor (or SciKL) and Python's FastAPI. This repo is 1 of 2 repos made to streamline the development of production ML containerized services. The source code is here to aid you in containerizing for use in the modern cloud with k8s or any container orcastrator. The helm files live here ([2nd repo](https://github.com/degrasse-python/ml-service)). The containerized image has been built with Docker. Location coming soon.
+Example FastAPI with ML for development using Tensor (or SciKL) and Python's FastAPI. This repo is 1 of 2 repos made to streamline the development of production ML containerized services. The source code is here to aid you in containerizing for use in the modern cloud with k8s or any container orcastrator. The helm files live here ([2nd repo](https://github.com/degrasse-python/ml-service)). The containerized image has been built with Docker. Location coming soon.
 
 Focus on your ml work and use this cookie cutter to create an API image for deployment to have a prediction modeling service.
 The [ml-model](https://github.com/degrasse-python/ml-api/tree/main/ml-model) folder contains two examples of a train-test-validation using tensorflow and scikit-learn to build a serialized model. Below are some steps that you would need to do to get this code into production. Notice that this code has completed a few of the steps for you to get you started but is really only for use in a testing environment. 
@@ -11,9 +11,13 @@ The [ml-model](https://github.com/degrasse-python/ml-api/tree/main/ml-model) fol
 To get started you must do these simple steps:
 
 1. Fork this repo
-2. Create a serialized model of your ML prediction algorithm.
-3. Use the Dockerfile here to containerize your API.
-4. Push your image to your container repo.
+2. Create a serialized model (pickle) of your ML prediction algorithm.
+3. Change the path in of your model on line 8.
+5. Test your ML model.
+6. Use the Dockerfile here to containerize your API.
+7. Push your image to your container repo.
+
+Below are instructions to productionize this repo for real world use. You may notice I have done completed some of these steps for you.
 
 ## Steps to Productionize FastAPI code
 
